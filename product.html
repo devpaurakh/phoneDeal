@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the website of the mobile phone store">
+    <meta name="keywords" content="phone deal, apple store, mobile phone store">
+    <meta name="aurthor" content="Paurakh Saud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <title>PHONE DEAL | POINT | PRODUCT</title>
+</head>
+<link rel="stylesheet" href="./product.css">
+
+<body>
+    <style>
+        /* for top nevigation  */
+        .top {
+            background-color: antiquewhite;
+            padding: 2px;
+        }
+
+        .top ul {
+            margin-left: 78%;
+        }
+
+        .top ul li {
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        .top ul li a {
+            font-size: 12px;
+            color: black;
+            transition: 1.5s;
+        }
+
+        .top ul li a:hover {
+            font-size: 15px;
+            color: brown;
+        }
+
+        /* Search Input Id */
+        #search {
+            height: 30px;
+            width: 20%;
+            border-radius: 6px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        /* search button */
+        #searchbtn {
+            height: 30px;
+            width: 70px;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: transparent;
+            transition: 1.2s;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #searchbtn:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <div class="top">
+        <ul>
+            <li><a href="#"><img src="./cart.png" alt="" height="20px"></a></li>
+            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./signup.html">CREATE AN ACCOUNT</a></li>
+            <li><a href="./product_nepali.html">नेपाली</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="nevbar">
+            <!-- Developing navbar, class name nevbar -->
+            <a href="./index.html"><img src="./logo.png" alt="Company logo" height="120px"></a>
+            <ul id="menu">
+                <li class="menu"><a href="./index.html">HOME</a></li>
+                <li class="menu"><a href="./product.html">PRODUCT</a></li>
+                <li class="menu"><a href="./blog.html">BLOG</a></li>
+                <li class="menu"><a href="./research.html">REASEARCH</a></li>
+                <li class="menu"><a href="./Contect.html">CONTACT US.</a></li>
+                <li class="menu"><a href="./about.html">ABOUT US.</a></li>
+                <li class="menu"><a href="./emical.html">EMI CALCULATOR</a></li>
+                <input type="text" name="search" id="search" placeholder="Search Here...">
+                <button type="submit" id="searchbtn">Search</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+
+
+    <!-- body content -->
+    <div class="mainbody">
+        <section class="bodycontent">
+            <!-- left content which includes the categories -->
+            <aside class="bodyleft">
+
+                <div class="productCate">
+                    <h1 style="font-weight:bolder;">Product Categories</h1>
+                    <ul>
+                        <li><a href="#applePreoduct">Apple</a></li>
+                        <li><a href="#miProduct">Xioami</a></li>
+                        <li><a href="#samsungPreoduct">Samsung</a></li>
+                        <li><a href="#nokiaProduct">Nokia</a></li>
+                        <li><a href="#oneplusProduct">Oneplus+</a></li>
+                        <li><a href="#realmePreoduct">Realme</a></li>
+                    </ul>
+                </div>
+
+                <!-- ads-B -->
+                <div class="adsB">
+                    <img src="./gif ads/iphone-se.gif" alt="" width="100%" height="500px">
+                    <button type="submit">Check Out </button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- right body content -->
+        <section class="bodyB">
+            <aside class="left">
+                <div class="slider">
+                    <button type="submit" id="left" onclick='left()'>&#8678;</button>
+                    <button type="submit" id="right" onclick='right()'>&#8680;</button>
+                    <div class="containt" id="photos">
+                        <img src="./javascript/1.jpg" name="image" alt="">
+                    </div>
+                </div>
+                <!-- java script -->
+                <script src="./javascript/slider.js"></script>
+                <!-- End slider -->
+
+                <div class="iphoneproduct">
+                    <table class="moblie-product" id="applePreoduct">
+                        <!-- apple product -->
+                        <tr id="apple1Row">
+                            <h1 class="phoneName" style="text-decoration:underline;">Apple</h1>
+                            <td><img src="./product phones/apple 12.png" alt="" style="margin-left:-20px;">
+                                <h3 class="proName" style="margin-left:-100px;">Iphone 12</h3>
+                                <h3 class="proRate" style="margin-left:-100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:-100px;">Rs. 168,999</h3>
+                                <button class="probtn" style="margin-left:-100px;">Add To Cart</button>
+                            </td>
+                            <td><img src="./product phones/apple 13 green.png" alt="">
+                                <h3 class="proName">Iphone 13</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 268,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td><img src="./product phones/ipad air 4.png" alt="">
+                                <h3 class="proName">Ipad Air 4</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 68,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                        </tr>
+                        <tr id="apple2row">
+                            <td><img src="./product phones/ipad pro.png" alt="" style="margin-left:-100px;">
+                                <h3 class="proName" style="margin-left:-100px;">Ipad Pro</h3>
+                                <h3 class="proRate" style="margin-left:-100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:-100px;">Rs. 158,999</h3>
+                                <button class="probtn" style="margin-left:-100px;">Add To Cart</button>
+                            </td>
+                            <td><img src="./product phones/iphone 12 mini.png" alt="">
+                                <h3 class="proName">iphone 12 Mini</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 128,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td><img src="./product phones/iphone xr.png" alt="">
+                                <h3 class="proName">iphone 12</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 168,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- mi product -->
+                    <table class="moblie-product" id="miProduct" style="margin-top:30px;margin-left:240px;">
+                        <tr id="mi1Row">
+                            <h1 class="phoneName" style="text-decoration:underline;">Xioami</h1>
+                            <td><img src="./mi/1.png" alt="" style="margin-top:30px; margin-left: -140px;">
+                                <h3 class="proName" style="margin-left:-140px;">Redmi 10 Prime</h3>
+                                <h3 class="proRate" style="margin-left:-140px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:-140px;">Rs. 19,999</h3>
+                                <button class="probtn" style="margin-left:-140px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./mi/2.png" alt="" style="margin-left:100px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:100px;">Redmi A9 Sport</h3>
+                                <h3 class="proRate" style="margin-left:100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:100px;">Rs. 17,999</h3>
+                                <button class="probtn" style="margin-left:100px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./mi/mi 11 ultra.png" alt="" style="margin-left:100px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:100px;">Redmi 11 Ultra</h3>
+                                <h3 class="proRate" style="margin-left:100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:100px;">Rs. 38,999</h3>
+                                <button class="probtn" style="margin-left:100px;">Add To Cart</button>
+                            </td>
+                        </tr>
+                        <tr id="mi2row">
+                            <td><img src="./mi/mi note 9.png" alt="" style="margin-top:30px; margin-left: -140px; ">
+                                <h3 class="proName" style="margin-left:-140px;">Redmi Note 9</h3>
+                                <h3 class="proRate" style="margin-left:-140px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:-140px;">Rs. 18,999</h3>
+                                <button class="probtn" style="margin-left:-140px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./mi/5.png" alt="" style="margin-left:100px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:100px;">Mi 11X</h3>
+                                <h3 class="proRate" style="margin-left:100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:100px;">Rs. 19,999</h3>
+                                <button class="probtn" style="margin-left:100px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./mi/note 9.png" alt="" style="margin-left:100px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:100px;">Redmi Note 10</h3>
+                                <h3 class="proRate" style="margin-left:100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:100px;">Rs. 28,999</h3>
+                                <button class="probtn" style="margin-left:100px;">Add To Cart</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- oneplus product -->
+                    <table class="moblie-product" id="oneplusProduct">
+                        <tr id="oneplus1Row">
+                            <h1 class="phoneName" style="text-decoration:underline;">One Plus</h1>
+                            <br><br>
+                            <td>
+                                <img src="./oneplus/ Nord n10.png" alt="" style="margin-top:30px;">
+                                <h3 class="proName">Oneplus Nord N10</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 58,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./oneplus/9 pro.png" alt="" style="margin-left:100px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:100px;">Oneplu 9 Pro</h3>
+                                <h3 class="proRate" style="margin-left:100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:100px;">Rs. 79,999</h3>
+                                <button class="probtn" style="margin-left:100px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./oneplus/OnePlus-10-Pro.png" alt=""
+                                    style="margin-left:10px; margin-top:30px;">
+                                <h3 class="proName">OnePlus 10 Pro</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 89,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                        </tr>
+                        <tr id="oneplus2row">
+                            <td>
+                                <img src="./oneplus/oneplus-8.png" alt="" style="margin-top:30px;">
+                                <h3 class="proName">Oneplus 8</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 67,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./oneplus/oneplus-nord-2t.png" alt=""
+                                    style="margin-left:100px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:100px;">Oneplus Nord 2T</h3>
+                                <h3 class="proRate" style="margin-left:100px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:100px;">Rs. 16,999</h3>
+                                <button class="probtn" style="margin-left:100px;">Add To Cart</button>
+                            </td>
+                            <td><img src="./oneplus/OnePlus_Nord_2_5G.png" alt=""
+                                    style="margin-left:20px; margin-top:30px;">
+                                <h3 class="proName">Oneplus Nord 2 5G</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 47,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="moblie-product" id="nokiaProduct">
+                        <!-- nokia product -->
+                        <tr id="nokia1Row">
+                            <h1 class="phoneName" style="text-decoration:underline;">Nokia</h1>
+                            <br><br><br>
+                            <td>
+                                <img src="./nokia product/nokia x20 5g.png" alt="" style="margin-top:30px;">
+                                <h3 class="proName" style="margin-top:10px;">Nokia-X20</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 18,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./nokia product/nokia-215.png" alt=""
+                                    style="margin-left:80px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">Nokia-215</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 20,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./nokia product/nokia-c21.png" alt=""
+                                    style="margin-left:80px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">Nokia-C21</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 24,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                        </tr>
+                        <tr id="nokia2row">
+                            <td>
+                                <img src="./nokia product/nokia-g11.png" alt="" style="margin-top:30px;">
+                                <h3 class="proName" style="margin-top:10px;">Nokia-G11</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 19,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./nokia product/nokia-x100.png" alt=""
+                                    style="margin-left:80px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">Nokia-x100</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 17,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./nokia product/nokia-x20.png" alt=""
+                                    style="margin-left:80px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">Nokia X20</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 18,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="moblie-product">
+                        <!-- samsung product -->
+                        <tr id="samsung1Row">
+                            <h1 class="phoneName" style="text-decoration:underline;" id="samsungPreoduct">Samsung</h1>
+                            <br><br><br>
+                            <td><img src="./samsung product/galaxy-tab-s6-lite.png" alt="">
+                                <h3 class="proName" style="margin-top:10px;">Galaxy tab S6 lite</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 68,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td><img src="./samsung product/samsung-galaxy-a13.png" alt="" style="margin-left:80px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">Samsung galaxy A13</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 168,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                            <td><img src="./samsung product/samsung-galaxy-a22.png" alt="" style="margin-left:80px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">samsung-galaxy A22</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 17,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                        </tr>
+                        <tr id="samsung2row">
+                            <td><img src="./samsung product/samsung-galaxy-a73.png" alt="" style="margin-top:30px;">
+                                <h3 class="proName" style="margin-top:10px;">Samsung galaxy A13</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 18,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td><img src="./samsung product/samsung-galaxy-m13.png" alt=""
+                                    style="margin-left:80px; margin-top:30px;">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px;">Samsung galaxy M13</h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px;">Rs. 28,999</h3>
+                                <button class="probtn" style="margin-left:80px;">Add To Cart</button>
+                            </td>
+                            <td><img src="./samsung product/samsung-galaxy-s22-ultra.png" alt=""
+                                    style="margin-left:80px;  margin-top:30px; ">
+                                <h3 class="proName" style="margin-left:80px; margin-top:10px; ">Samsung galaxy s22 ultra
+                                </h3>
+                                <h3 class="proRate" style="margin-left:80px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice" style="margin-left:80px; ">Rs. 268,999</h3>
+                                <button class="probtn" style="margin-left:80px; ">Add To Cart</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="moblie-product">
+                        <!-- RealMe products -->
+                        <tr id="realme1Row">
+                            <h1 class="phoneName" style="text-decoration:underline;" id="realmePreoduct">Realme</h1>
+                            <br><br><br>
+                            <td><img src="./realme product/9i.png" alt="">
+                                <h3 class="proName">Realme 9i</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 24,499</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td><img src="./realme product/c21y.png" alt="">
+                                <h3 class="proName">Realme C21Y</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 16,199</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td><img src="./realme product/c25y.png" alt="">
+                                <h3 class="proName">Realme C25Y</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 18,749</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                        </tr>
+                        <tr id="realme2row">
+                            <td>
+                                <img src="./realme product/realme C35.png" alt="">
+                                <h3 class="proName">Realme C35</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 21,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./realme product/realme-9-Pro.png" alt="">
+                                <h3 class="proName">Realme 9 Pro</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 41,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                            <td>
+                                <img src="./realme product/Realme-GT-Neo-2.png" alt="">
+                                <h3 class="proName">Realme-GT-Neo-2</h3>
+                                <h3 class="proRate">&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
+                                <h3 class="proPrice">Rs. 54,999</h3>
+                                <button class="probtn">Add To Cart</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+        </section>
+    </div>
+    <!-- this present above footer -->
+    <section class="upperfooter">
+        <div class="samsungads">
+            <img src="./gif ads/samsunglogo.gif" alt="" width="100%">
+        </div>
+        <div class="iphoneads">
+            <img src="./gif ads/apple logo.gif" alt="" width="100%">
+        </div>
+    </section>
+    <!-- end upperfooter -->
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <!-- bottom left -->
+        <div class="bottom-left">
+            <h3>Download Our App</h3>
+            <p>Download Our App For Android Or IOs</p>
+            <a href="#"><img src="./footer photo/play-store.png" alt=""></a>
+            <a href="#"><img src="./footer photo/app-store.png" alt=""></a>
+        </div>
+        <!-- bottom middle  -->
+        <div class="bottom-middle">
+            <a href="./gym.html"><img src="./logo.png" alt=""></a><br><br><br>
+        </div>
+        <div class="bottom-right1">
+            <h2>Useful Link</h2>
+
+            <a href="#"> Shop Now
+            </a> <br>
+            <a href="#">Refund Policy</a> <br>
+            <a href="#">Insurance Policy</a><br>
+            <a href="#">Read Terms & Condition
+            </a>
+        </div>
+        <!-- bottom right -->
+        <div class="bottom-right">
+            <H2>Follow Us.</H2>
+            <a href="#">Facebook</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">Youtube</a><br>
+            <a href="#">Tiktok</a><br>
+            <img src="./footer photo/social media.png" alt="">
+        </div>
+        <hr class="horizantal">
+        <div class="payment">
+            <h2>Payment</h2>
+            <ul>
+                <li>Master Card or Debit Card or Credit Card</li>
+                <li>E-sewa</li>
+                <li>Khelti</li>
+                <li>Bank Account</li>
+            </ul>
+        </div>
+        <hr id="hrB">
+        <div class="links">
+            <ul>
+                <li><a href="#">iPHONE</a></li>|
+                <li><a href="#">GALEXY</a></li>|
+                <li><a href="#">POCO</a></li>|
+                <li><a href="#">MI NOTE</a></li>|
+                <li><a href="#">Z-FOLD</a></li>|
+                <li><a href="#">GAMMING PAD</a></li>|
+                <li><a href="#">SMART WATCH</a></li>|
+                <li><a href="#">LAPTOP</a></li>|
+                <li><a href="#">HEADPHONE </a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Half footer below horizanrtal line -->
+    <style>
+        .horizantal {
+            margin-top: 119px;
+            background: black;
+            border: 0.5px solid black;
+            width: 100%;
+        }
+
+        .payment {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .payment ul {
+            list-style: none;
+        }
+
+        .payment ul li {
+            margin-top: 13px;
+        }
+
+        #hrB {
+            margin-top: 19px;
+            border: 0.1px solid black;
+
+        }
+
+        .links {
+            text-align: center;
+            margin-left: -10px;
+            margin-top: 20px;
+        }
+
+        .links ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+        }
+
+        .links a:hover {
+            color: rgb(161, 110, 211);
+        }
+    </style>
+
+
+</body>
+
+</html>

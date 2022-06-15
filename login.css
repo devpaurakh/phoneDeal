@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For main nevigation bar */
+nav{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+}
+.nevbar{
+   
+    height: 100px;
+}
+.nevbar img{
+    position: absolute;
+
+}
+.nevbar #menu{
+    margin-left:13%;
+}
+.nevbar ul .menu{
+    display: inline-block;
+    margin-right: 21px;
+    margin-top: 68px;
+}
+/* using sudo selector to make under line effect while hovering */
+.nevbar ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 1.5s;
+}
+/* hovering effet on after sudo sedo selector */
+.nevbar ul li:hover::after{
+    width: 100%;
+}
+.nevbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 1.5s;
+    font-weight: 700;
+    padding: 5px;
+    
+}
+.nevbar ul li a:hover{
+    color: brown;
+}
+/* footer */
+.footer {
+    background: #A2C4C9;
+    color: black;
+    height: 500px;
+    margin-top: 10%;
+    padding: 43px;
+  }
+  /* bottom left's css with  */
+  .bottom-left {
+    border: 2px;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 14px;
+    padding-left: 20px;
+  }
+  /* playstore and app store image */
+  .bottom-left img {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 21px;
+    padding-left: 40px;
+  }
+  .bottom-left h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .bottom-left p {
+    text-align: center;
+    padding-left: 20px;
+  }
+  /* for upper middle */
+  .bottom-middle {
+    border: 2px;
+    display: inline-block;
+    position: absolute;
+    width: 10%;
+    margin: auto 300px;
+    padding-right: 15px;
+  }
+  /* logo */
+  .bottom-middle img {
+      height: 182px;
+      margin-top: -50px;
+      margin-left: -100px;
+  }
+  /* CSS for right content */
+  .bottom-right {
+    border: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding-right: 50px;
+    text-align: center;
+  }
+  .bottom-right1 {
+    border: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding-right: 300px;
+    text-align: center;
+  }
+  .bottom-right1 a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .bottom-right1 a:hover {
+    color: white;
+    transition: 1s;
+  }
+  .bottom-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .bottom-right a:hover {
+    transition: 1s;
+   color: white;
+  }
+  .bottom-right img{
+    width: 150px;
+  }
+  /* body part */
+  .body{
+    display: flex;
+  }
+  .loginform{
+    width: 54%;
+    padding: 58px;
+    margin: 40px;
+  }
+  label{
+    font-size: 20px;
+  }
+  input{
+    width: 70%;
+    height: 50px;
+    margin-top: 9px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  #boxA{
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+ 
+  /* form */
+  form{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.941),rgba(199, 185, 185, 0.878));
+    margin-left: 59px;
+    padding: 50px;
+    padding-left: 100px;
+    border-radius:10px;
+  }
+  /* button */
+  .loginform button{
+    cursor: pointer;
+    width: 70%;
+    height: 40px;
+    background: blue;
+    color: white;
+    border: none;
+  }
+  .loginform a{
+    margin-left: 75px;
+  }
+
+  #facebook{
+    background-color: darkblue;
+  }
+  #google{
+    background-color: red;
+  }
+  
+

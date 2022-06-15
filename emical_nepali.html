@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the website of the mobile phone store">
+    <meta name="keywords" content="phone deal, apple store, mobile phone store">
+    <meta name="aurthor" content="Paurakh Saud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHONE DEAL | POINT | ई.एम.आई क्याल्कुलेटर</title>
+</head>
+<link rel="stylesheet" href="./emical_nepali.css">
+
+<body>
+    <style>
+        /* for top nevigation  */
+        .top {
+            background-color: antiquewhite;
+            padding: 2px;
+        }
+
+        .top ul {
+            margin-left: 78%;
+        }
+
+        .top ul li {
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        .top ul li a {
+            font-size: 12px;
+            color: black;
+            transition: 1.5s;
+        }
+
+        .top ul li a:hover {
+            font-size: 15px;
+            color: brown;
+        }
+
+        /* Search Input Id */
+        #search {
+            height: 30px;
+            width: 20%;
+            border-radius: 6px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        /* search button */
+        #searchbtn {
+            height: 30px;
+            width: 70px;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: transparent;
+            transition: 1.2s;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #searchbtn:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <div class="top">
+        <ul>
+            <li><a href="#"><img src="./cart.png" alt="" height="20px"></a></li>
+            <li><a href="./login_nepali.html">लग-इन</a></li>
+            <li><a href="./signup_nepali.html">Account खोल्नुहोस्</a></li>
+            <li><a href="./emical.html">ENGLISH</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="nevbar">
+            <!-- Developing navbar, class name nevbar -->
+            <a href="./index.html"><img src="./logo.png" alt="Company logo" height="120px"></a>
+            <ul id="menu">
+                <li class="menu"><a href="./index_nepali.html">गृह पृष्ठ</a></li>
+                <li class="menu"><a href="./product_nepali.html">मोबाइल फोनहरू</a></li>
+                <li class="menu"><a href="./blog_nepali.html">लेख</a></li>
+                <li class="menu"><a href="./research_nepali.html">खोज</a></li>
+                <li class="menu"><a href="./Contect_nepali.html">सम्पर्क गर्नुहोस</a></li>
+                <li class="menu"><a href="./about_nepali.html">हाम्रो बारे</a></li>
+                <li class="menu"><a href="./emical_nepali.html">ई.एम.आई क्याल्कुलेटर</a></li>
+                <input type="text" name="search" id="search" placeholder="Search Here...">
+                <button type="submit" id="searchbtn">खोजहोस</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- body content -->
+    <script src="./javascript/main.js"></script>
+    <div class="bodycontent">
+        <div class="bodyleft">
+            <h1>कृपया तलको फारम भर्नुहोस्</h1><br>
+            <p>*(अनिवार्य)</p>
+            <div class="form">
+                <form action="#">
+                    <br><br><br>
+                    <label for="totalprice">सामान कुल मूल्य*</label><br>
+                    <input class="input" type="text" name="price" id="price"><br><br><br>
+                    <label for="totalprice">तपाईंले तिर्न चाहनुभएको कुल डाउन पेमेन्ट*</label><br>
+                    <input class="input" type="text" name="payment" id="payment"><br><br><br>
+                    <label for="totalprice">सामान छान्नुहोस्*</label><br>
+                    <select class="input" name="product" id="product">
+                        <option value="apple">Apple iPhone/iPad/iPod</option>
+                        <option value="oneplus">One plus X or other</option>
+                        <option value="mi">Poco X3 pro/MI 10 pro</option>
+                        <option value="nokia">Nokia SE7+</option>
+                        <option value="jbl">JBL Headphones</option>
+                        <option value="laptop">MacbookAir/LenevoR7/Macbookpro</option>
+                        <option value="apple">अरू*</option>
+                    </select><br><br><br>
+                    <label for="totalprice">बैंक छान्नुहोस्* </label><br>
+                    <select class="input" name="bank" id="bank">
+                        <option value="himalyan">हिमालयन बैंक</option>
+                        <option value="globalime">ग्लोबल आई.एम.ई</option>
+                        <option value="mega">मेगा बैंक</option>
+                        <option value="nabil">नबिल बैंक</option>
+                    </select><br><br><br>
+                    <label for="totalprice">भुक्तानी समय अवधि छान्नुहोस्* </label><br>
+                    <select class="input" name="time" id="time">
+                        <option value="12month">१२ महिना</option>
+                        <option value="18month">१८ महिना</option>
+                        <option value="24month">२४ महिना</option>
+                    </select><br>
+                    <button type="submit" id="submit" onclick="submit()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="bodyright">
+            <p>तपाईलाई Phone Deal | Point को ई.एम.आई क्याल्कुलेटरमा स्वागत छ । ई.एम.आई सेवा प्रयोग गरेर हाम्रा स्टोरमा
+                रेहेका विभिन्न मोबाइल कम्पनीहरुका उत्पादनहरू किन्न तपाईंले तिर्नु पर्ने कुल रकम गणना गर्नको लागि सेवा
+                गर्न यो प्रयोग गर्नुहोस्।</p>
+            <p id="steps">कृपया यी चरणहरू पालना गर्नुहोस्</p>
+            <ul>
+                <li>आवेदकहरू हाम्रा कुनै पनि साझेदार बैंकहरूबाट क्रेडिट कार्ड भएको हुनुनेपर्छ (डेबिट कार्ड भएका
+                    ग्राहकहरु EMI को लागी आवेदन गर्न योग्य हुनेछैनन्)</li>
+                <li>तपाईले किन्न चाहनु भएको सामान उद्धरणको लागि अनुरोध गर्नुहोस्, Phone Deal | Point बाट
+                <li>
+                <li>एक पटक कार्ट राख्नु, तपाईंले EMI को लागी आवेदन गरिरहनुभएको बैंकको क्रेडिट-कार्ड विभागबाट स्वीकृति
+                    लिनु आवश्यक छ।</li>
+                <li>DO (डिलिभरी अर्डर) प्राप्त गर्नुहोस् र हाम्रो स्टोरबाट ड्रप गर्नुहोस्</li>
+                <li>बैंकको स्वीकृति र DO को आधारमा, हामीले तपाईंलाई उत्पादन उपलब्ध गराउने छौं ।</li>
+            </ul>
+            <div class="bankrate">
+                <div class="bank">
+                    <ul>
+                        <h4>साझेदार ईएमआई बैंकहरू</h4>
+                        <li>हिमालयन बैंक</li>
+                        <li>ग्लोबल आई.एम.ई</li>
+                        <li>मेगा बैंक</li>
+                        <li>नबिल बैंक</li>
+                    </ul>
+                </div>
+                <div class="rate">
+                    <ul>
+                        <h4>ब्याजदर</h4>
+                        <li>12%</li>
+                        <li>10%</li>
+                        <li>10%</li>
+                        <li>12%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end body content -->
+    
+    <div class="emiResult">
+        <H1>Detail Of your E.I.M</H1>
+        <h3 class="emiPoints">Total Amount: <span id="totalAmt"> </span></h3>
+        <h3 class="emiPoints">Total Downpayment: <span id="totalDown"></span></h3>
+        <h3 class="emiPoints">Total Balance Remaing: <span id="totalRegi"></span></h3>
+        <h3 class="emiPoints">Total duration: <span id="totalDuration"></span></h3>
+        <h3 class="emiPoints"> Amount to be paid monthly: <span id="amountMonth"></span> </h3>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <!-- bottom left -->
+        <div class="bottom-left">
+            <h3>Download Our App</h3>
+            <p>Download Our App For Android Or IOs</p>
+            <a href="#"><img src="./footer photo/play-store.png" alt=""></a>
+            <a href="#"><img src="./footer photo/app-store.png" alt=""></a>
+        </div>
+        <!-- bottom middle  -->
+        <div class="bottom-middle">
+            <a href="./gym.html"><img src="./logo.png" alt=""></a><br><br><br>
+        </div>
+        <div class="bottom-right1">
+            <h2>Useful Link</h2>
+
+            <a href="#"> Shop Now
+            </a> <br>
+            <a href="#">Refund Policy</a> <br>
+            <a href="#">Insurance Policy</a><br>
+            <a href="#">Read Terms & Condition
+            </a>
+        </div>
+        <!-- bottom right -->
+        <div class="bottom-right">
+            <H2>Follow Us.</H2>
+            <a href="#">Facebook</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">Youtube</a><br>
+            <a href="#">Tiktok</a><br>
+            <img src="./footer photo/social media.png" alt="">
+        </div>
+        <hr class="horizantal">
+        <div class="payment">
+            <h2>Payment</h2>
+            <ul>
+                <li>Master Card or Debit Card or Credit Card</li>
+                <li>E-sewa</li>
+                <li>Khelti</li>
+                <li>Bank Account</li>
+            </ul>
+        </div>
+        <hr id="hrB">
+        <div class="links">
+            <ul>
+                <li><a href="#">iPHONE</a></li>|
+                <li><a href="#">GALEXY</a></li>|
+                <li><a href="#">POCO</a></li>|
+                <li><a href="#">MI NOTE</a></li>|
+                <li><a href="#">Z-FOLD</a></li>|
+                <li><a href="#">GAMMING PAD</a></li>|
+                <li><a href="#">SMART WATCH</a></li>|
+                <li><a href="#">LAPTOP</a></li>|
+                <li><a href="#">HEADPHONE </a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Half footer below horizanrtal line -->
+    <style>
+        .horizantal {
+            margin-top: 119px;
+            background: black;
+            border: 0.5px solid black;
+            width: 100%;
+        }
+
+        .payment {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .payment ul {
+            list-style: none;
+        }
+
+        .payment ul li {
+            margin-top: 13px;
+        }
+
+        #hrB {
+            margin-top: 19px;
+            border: 0.1px solid black;
+
+        }
+
+        .links {
+            text-align: center;
+            margin-left: -10px;
+            margin-top: 20px;
+        }
+
+        .links ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+        }
+
+        .links a:hover {
+            color: rgb(161, 110, 211);
+        }
+
+
+        /* calculation class called emiresult */
+        .emiResult{
+            color: white;
+            background-color: brown;
+            width: 400px;
+            padding: 20px;
+            margin-left: 200px;
+            border-radius: 20px;
+        }
+        .emiPoints{
+            margin-top: 15px;
+        }
+    </style>
+
+   
+</body>
+
+</html>

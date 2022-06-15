@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For main nevigation bar */
+nav{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+}
+.nevbar{
+   
+    height: 100px;
+}
+.nevbar img{
+    position: absolute;
+
+}
+.nevbar #menu{
+    margin-left:13%;
+}
+.nevbar ul .menu{
+    display: inline-block;
+    margin-right: 21px;
+    margin-top: 68px;
+}
+/* using sudo selector to make under line effect while hovering */
+.nevbar ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 1.5s;
+}
+/* hovering effet on after sudo sedo selector */
+.nevbar ul li:hover::after{
+    width: 100%;
+}
+.nevbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 1.5s;
+    font-weight: 700;
+    padding: 5px;
+    
+}
+.nevbar ul li a:hover{
+    color: brown;
+}
+
+/* footer */
+.footer {
+    background: #A2C4C9;
+    color: black;
+    height: 500px;
+    margin-top: 10%;
+    padding: 43px;
+  }
+  /* bottom left's css with  */
+  .bottom-left {
+    border: 2px;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 14px;
+    padding-left: 20px;
+  }
+  /* playstore and app store image */
+  .bottom-left img {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 21px;
+    padding-left: 40px;
+  }
+  .bottom-left h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .bottom-left p {
+    text-align: center;
+    padding-left: 20px;
+  }
+  /* for upper middle */
+  .bottom-middle {
+    border: 2px;
+    display: inline-block;
+    position: absolute;
+    width: 10%;
+    margin: auto 300px;
+    padding-right: 15px;
+  }
+  /* logo */
+  .bottom-middle img {
+      height: 182px;
+      margin-top: -50px;
+      margin-left: -100px;
+  }
+  /* CSS for right content */
+  .bottom-right {
+    border: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding-right: 50px;
+    text-align: center;
+  }
+  .bottom-right1 {
+    border: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding-right: 300px;
+    text-align: center;
+  }
+  .bottom-right1 a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .bottom-right1 a:hover {
+    color: white;
+    transition: 1s;
+  }
+  .bottom-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .bottom-right a:hover {
+    transition: 1s;
+   color: white;
+  }
+  .bottom-right img{
+    width: 150px;
+  }
+   /* body */
+  /* form part, left part and right part of body */
+ .bodycontent{
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.bodyleft{
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.941),rgba(199, 185, 185, 0.878));
+ box-sizing: border-box;
+ padding: 5px;
+ width: 500px;
+ text-align: center; 
+ border-radius: 10px;
+}
+.bodyright{
+  background-image: linear-gradient(to left,rgba(199, 185, 185, 0.878), rgba(255, 255, 255, 0.941));
+ box-sizing: border-box;
+ padding: 5px;
+ width: 500px;
+ text-align: justify;
+
+ padding: 20px;
+ border-radius: 10px;
+}
+.bodyright ul{
+ margin-top: 16px;
+ margin-left: 77px;
+}
+#steps{
+ margin-top: 46px;
+}
+.bodyright ul li{
+ margin-top: 14px;
+}
+
+/* form name class */
+.form{
+ text-align: start;
+ padding: 13px;
+ margin-top: 3px;
+}
+#submit{
+border: none;
+ margin-top: 22px;
+ width: 50%;
+ height: 40px;
+ cursor: pointer;
+ background-image: linear-gradient(to left, rgba(255, 255, 255, 0.941),rgb(245, 222, 179));
+ border-radius: 10px;
+ font-size: 19px;
+}
+
+/* class name Input to all the place where user can give input */
+.input{
+ padding: 7px;
+ margin-top:10px;
+ font-size: 16px;
+ width: 70%;
+ height: 50px;
+ background-color: transparent;
+}
+/* EMI rates css */
+.bankrate{
+ display: flex;
+ text-align: center;
+ margin-top: 30px;
+}
+.bankrate ul li{
+ list-style: none;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the website of the mobile phone store">
+    <meta name="keywords" content="phone deal, apple store, mobile phone store">
+    <meta name="aurthor" content="Paurakh Saud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>PHONE DEAL | POINT | RESEARCH</title>
+</head>
+<link rel="stylesheet" href="./research.css">
+
+<body>
+    <style>
+        /* for top nevigation  */
+        .top {
+            background-color: antiquewhite;
+            padding: 2px;
+        }
+
+        .top ul {
+            margin-left: 78%;
+        }
+
+        .top ul li {
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        .top ul li a {
+            font-size: 12px;
+            color: black;
+            transition: 1.5s;
+        }
+
+        .top ul li a:hover {
+            font-size: 15px;
+            color: brown;
+        }
+
+        /* this is the css for the horizantal line */
+        hr {
+            width: 66%;
+            margin-left: 19%;
+            border: none;
+            height: 3px;
+            background-color: black;
+        }
+
+        /* this is the class of all the "h" tags */
+        .h_tag {
+            text-align: center;
+        }
+
+        /* featured product */
+        .Featured-Product {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            z-index: 444px;
+        }
+
+        /* h3 tag of iphone class */
+        .iphone h3 {
+            margin-top: 50px;
+            transition: 1.3s;
+            cursor: pointer;
+        }
+
+        .iphone h3:hover {
+            padding: 5px;
+            border-radius: 0px 15px 0px 15px;
+            background-color: black;
+            color: white;
+        }
+
+        /* h3 tag of samsung class */
+        .samsung h3 {
+            cursor: pointer;
+            margin-top: 50px;
+            transition: 1.3s;
+        }
+
+        .samsung h3:hover {
+            padding: 5px;
+            border-radius: 0px 15px 0px 15px;
+            background-color: black;
+            color: white;
+        }
+
+        /* h3 tag of oneplus class */
+        .oneplus h3 {
+            cursor: pointer;
+            margin-top: 50px;
+            transition: 1.3s;
+        }
+
+        .oneplus h3:hover {
+            padding: 5px;
+            border-radius: 0px 15px 0px 15px;
+            background-color: black;
+            color: white;
+        }
+
+        /* for Images of the phone */
+        .iphone img {
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 1.4s;
+
+        }
+
+        .iphone img:hover {
+            box-shadow: -16px 18px rgb(98, 95, 95);
+            border: 2px solid white;
+        }
+
+        .samsung img {
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 1.4s;
+
+        }
+
+        .samsung img:hover {
+            box-shadow: -16px 18px rgb(98, 95, 95);
+            border: 2px solid white;
+        }
+
+
+        .oneplus img {
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 1.4s;
+        }
+
+        .oneplus img:hover {
+            box-shadow: -16px 18px rgb(98, 95, 95);
+            border: 2px solid white;
+        }
+
+        /* Search Input Id */
+        #search {
+            height: 30px;
+            width: 20%;
+            border-radius: 6px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        /* search button */
+        #searchbtn {
+            height: 30px;
+            width: 70px;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: transparent;
+            transition: 1.2s;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #searchbtn:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <div class="top">
+        <ul>
+            <li><a href="#"><img src="./cart.png" alt="" height="20px"></a></li>
+            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./signup.html">CREATE AN ACCOUNT</a></li>
+            <li><a href="./research_nepali.html">नेपाली</a></li>
+        </ul>
+    </div>
+    <!-- navbar -->
+    <nav>
+        <div class="nevbar">
+            <!-- Developing navbar, class name nevbar -->
+            <a href="./index.html"><img src="./logo.png" alt="Company logo" height="120px"></a>
+            <ul id="menu">
+                <li class="menu"><a href="./index.html">HOME</a></li>
+                <li class="menu"><a href="./product.html">PRODUCT</a></li>
+                <li class="menu"><a href="./blog.html">BLOG</a></li>
+                <li class="menu"><a href="./rearch.html">REASEARCH</a></li>
+                <li class="menu"><a href="./Contect.html">CONTACT US.</a></li>
+                <li class="menu"><a href="./about.html">ABOUT US.</a></li>
+                <li class="menu"><a href="./emical.html">EMI CALCULATOR</a></li>
+                <input type="text" name="search" id="search" placeholder="Search Here...">
+                <button type="submit" id="searchbtn">Search</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nevbar end -->
+
+
+    <!-- body content -->
+    <section class="bodycontent">
+        <div class="firstRow">
+            <!-- This is the text place -->
+            <div class="1strowLeft" style="text-align: justify;">
+           <p style="font-size:22px;"> I am inspired from the oliz store's home page. In this page there is drop down in every nevigation link, But I did not create that. I like much about the creativity of the design that developer used in that page likewise, I create a bit different design using my creativity such as hover effect and othe effect too. </p>      
+            </div>
+            <!-- this is photo1 -->
+            <div class="1srrowMiddle" style="margin-left:50px;text-align: center;">
+               <a href="./research part/reference home page.png"> <img src="./research part/reference home page.png" alt="" height="300px"></a>
+                <br><br>
+                <h1 class="photoName">Oliz Store Home Page</h1>
+            </div>
+            <!-- this is phoro2 -->
+            <div class="1strowright" style="margin-left:50px; text-align: center;" >
+                <a href="./research part/home.png"><img src="./research part/home.png" alt="" height="300px"></a>
+                <br><br>
+                <h1>My Adoptation </h1>
+            </div>
+        </div>
+        <div class="secondRow"  style="text-align: center; width: 100%;">
+            <div class="2ndrowLeft" style="text-align: justify;">
+               <p style="font-size:22px;">
+                In this page, I took the inspration from the evo store's page. when I hover in particular product it shows different effects like scaling up and so on. I have developed page with a bit different effect while hovering which seems cool to me. In left side I created a link to nevigate to respective product catagories and gif below down with checkout button.
+            
+            </p>
+            </div>
+            <!-- this is photo1 -->
+            <div class="2ndrowMiddle" style="margin-left:50px;text-align: center;">
+               <a href="./research part/product reference.png"> <img src="./research part/product reference.png" alt="" height="300px"></a>
+                <br><br>
+                <h1 class="photoName">Evo Store's Accessories</h1>
+            </div>
+            <!-- this is phoro2 -->
+            <div class="2ndrowright" style="margin-left:50px; text-align: center;" >
+                <a href="./research part/product.png"><img src="./research part/product.png" alt="" height="300px"></a>
+                <br><br>
+                <h1>My Adoptation </h1>
+            </div>
+        </div>
+        <div class="thirdrow" style="text-align: center; width: 100%;">
+            <div class="3rdrowLeft" style="text-align: justify;">
+                <p style="font-size:22px;">
+                   This is about us page. In this case I checkout the about us page of Himalyan Java Cofee's website. In my about us page there is nothing more effect in body content but some hover effect in navigation bar like by underling   
+                </p>
+            </div>
+            <!-- this is photo1 -->
+            <div class="3rdrowMiddle" style="margin-left:50px;text-align: center;">
+               <a href="./research part/references about us.png.png"> <img src="./research part/references about us.png" alt="" height="300px"></a>
+                <br><br>
+                <h1 class="photoName">Himalyan java's About Us. Page</h1>
+            </div>
+            <!-- this is phoro2 -->
+            <div class="3rdrowright" style="margin-left:50px; text-align: center;" >
+                <a href="./research part/aboutus.png"><img src="./research part/aboutus.png" alt="" height="300px"></a>
+                <br><br>
+                <h1>My Adoptation </h1>
+            </div>
+        </div>
+        <div class="forthrow" style="text-align: center; width: 100%;">
+            <p style="font-size:22px;text-align: justify;" >
+                There is nothing more difference butween these pages but I flipd the text area and the image. I kept the serch button at left top and below it there is catagory of mobile phone, below it there is the top blogs links. There is hover effect in the search button.     
+             </p>
+            <!-- this is photo1 -->
+            <div class="4throwMiddle" style="margin-left:50px;text-align: center;">
+               <a href="./research part/blog reference.png"> <img src="./research part/blog reference.png" alt="" height="300px"></a>
+                <br><br>
+                <h1 class="photoName">Cure rare disease's Blog Page</h1>
+            </div>
+            <!-- this is phoro2 -->
+            <div class="4throwright" style="margin-left:50px; text-align: center;" >
+                <a href="./research part/blogs.png"><img src="./research part/blogs.png" alt="" height="300px"></a>
+                <br><br>
+                <h1>My Adoptation </h1>
+            </div>
+        </div>
+        <div class="fifthrow" style="text-align: center; width: 100%;">
+            <div class="5throwLeft" style="text-align: justify;">
+                <p style="font-size:22px;text-align: justify;" >
+                    My adoptation for this EMI page is form oliz store's EMI page. This seems to be identical but I changed a bit things in my EMI pages. Navigation bar is same in all navigation links. In left there is form to fill us in the required field and in right thre is text which describe the form how to fill    
+                 </p>
+            </div>
+            <!-- this is photo1 -->
+            <div class="5throwMiddle" style="margin-left:50px;text-align: center;">
+               <a href="./research part/references emi.png"> <img src="./research part/references emi.png" alt="" height="300px"></a>
+                <br><br>
+                <h1 class="photoName">Oliz stor's EMI Calculator</h1>
+            </div>
+            <!-- this is phoro2 -->
+            <div class="5throwright" style="margin-left:50px; text-align: center;" >
+                <a href="./research part/Emi calculator.png"><img src="./research part/Emi calculator.png" alt="" height="300px"></a>
+                <br><br>
+                <h1>My Adoptation </h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <!-- bottom left -->
+        <div class="bottom-left">
+            <h3>Download Our App</h3>
+            <p>Download Our App For Android Or IOs</p>
+            <a href="#"><img src="./footer photo/play-store.png" alt=""></a>
+            <a href="#"><img src="./footer photo/app-store.png" alt=""></a>
+        </div>
+        <!-- bottom middle  -->
+        <div class="bottom-middle">
+            <a href="./gym.html"><img src="./logo.png" alt=""></a><br><br><br>
+        </div>
+        <div class="bottom-right1">
+            <h2>Useful Link</h2>
+
+            <a href="#"> Shop Now
+            </a> <br>
+            <a href="#">Refund Policy</a> <br>
+            <a href="#">Insurance Policy</a><br>
+            <a href="#">Read Terms & Condition
+            </a>
+        </div>
+        <!-- bottom right -->
+        <div class="bottom-right">
+            <H2>Follow Us.</H2>
+            <a href="#">Facebook</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">Youtube</a><br>
+            <a href="#">Tiktok</a><br>
+            <img src="./footer photo/social media.png" alt="">
+        </div>
+        <hr class="horizantal">
+        <div class="payment">
+            <h2>Payment</h2>
+            <ul>
+                <li>Master Card or Debit Card or Credit Card</li>
+                <li>E-sewa</li>
+                <li>Khelti</li>
+                <li>Bank Account</li>
+            </ul>
+        </div>
+        <hr id="hrB">
+        <div class="links">
+            <ul>
+                <li><a href="#">iPHONE</a></li>|
+                <li><a href="#">GALEXY</a></li>|
+                <li><a href="#">POCO</a></li>|
+                <li><a href="#">MI NOTE</a></li>|
+                <li><a href="#">Z-FOLD</a></li>|
+                <li><a href="#">GAMMING PAD</a></li>|
+                <li><a href="#">SMART WATCH</a></li>|
+                <li><a href="#">LAPTOP</a></li>|
+                <li><a href="#">HEADPHONE </a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Half footer below horizanrtal line -->
+    <style>
+        .horizantal {
+            margin-top: 119px;
+            background: black;
+            border: 0.5px solid black;
+            width: 100%;
+            margin-left: 18px;
+
+        }
+
+        .payment {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .payment ul {
+            list-style: none;
+        }
+
+        .payment ul li {
+            margin-top: 13px;
+        }
+
+        #hrB {
+            margin-top: 19px;
+            border: 0.2px solid black;
+
+        }
+
+        .links {
+            text-align: center;
+            margin-left: 32px;
+            margin-top: 20px;
+        }
+
+        .links ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            transition: 0.2s;
+        }
+
+        .links a:hover {
+            color: rgb(161, 110, 211);
+        }
+    </style>
+</body>
+
+</html>

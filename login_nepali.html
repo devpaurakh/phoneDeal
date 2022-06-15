@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the website of the mobile phone store">
+    <meta name="keywords" content="phone deal, apple store, mobile phone store">
+    <meta name="aurthor" content="Paurakh Saud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PHONE DEAL | POINT | LOGIN</title>
+</head>
+<link rel="stylesheet" href="./login.css">
+
+<body>
+    <style>
+        /* for top nevigation  */
+        .top {
+            background-color: antiquewhite;
+            padding: 2px;
+        }
+
+        .top ul {
+            margin-left: 78%;
+        }
+
+        .top ul li {
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        .top ul li a {
+            font-size: 12px;
+            color: black;
+            transition: 1.5s;
+        }
+
+        .top ul li a:hover {
+            font-size: 15px;
+            color: brown;
+        }
+        /* Search Input Id */
+        #search{
+            height: 30px;
+            width: 20%;
+            border-radius: 6px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        /* search button */
+        #searchbtn{
+            height: 30px;
+            width: 70px;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: transparent;
+            transition: 1.2s;
+            box-shadow: 2px 2px 3px black;
+        }
+        #searchbtn:hover{
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+    <div class="top">
+        <ul>
+            <li><a href="#"><img src="./cart.png" alt="" height="20px"></a></li>
+            <li><a href="./login_nepali.html">लग-इन</a></li>
+            <li><a href="./signup_nepali.html">Account खोल्नुहोस्</a></li>
+            <li><a href="./login.html">ENGLISH</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="nevbar">
+            <!-- Developing navbar, class name nevbar -->
+            <a href="./index.html"><img src="./logo.png" alt="Company logo" height="120px"></a>
+            <ul id="menu">
+                <li class="menu"><a href="./index_nepali.html">गृह पृष्ठ</a></li>
+                <li class="menu"><a href="./product_nepali.html">मोबाइल फोनहरू</a></li>
+                <li class="menu"><a href="./blog_nepali.html">लेख</a></li>
+                <li class="menu"><a href="./research_nepali.html">खोज</a></li>
+                <li class="menu"><a href="./Contect_nepali.html">सम्पर्क गर्नुहोस</a></li>
+                <li class="menu"><a href="./about_nepali.html">हाम्रो बारे</a></li>
+                <li class="menu"><a href="./emical_nepali.html">ई.एम.आई क्याल्कुलेटर</a></li>
+                <input type="text" name="search" id="search" placeholder="Search Here...">
+                <button type="submit" id="searchbtn">खोजहोस</button>
+            </ul>
+        </div>
+    </nav>
+     <!-- body part -->
+     <div class="body">
+        <div class="loginform">
+            <form action="#">
+                <h1>लग - इन</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae. <br> Illum sit consequatur itaque facilis.</p><br><br><br>
+                <label for="email">इ-मेल</label><br>
+                <input type="email" name="email" id="email" placeholder="Email"><br><br><br>
+                <label for="email">पासवर्ड</label><br>
+                <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                <input type="checkbox" name="boxA" id="boxA"> <span>मलाई सम्झनुहोस्</span> <span><a href="#">पासवर्ड बिर्सनुभयाे ?</a></span> <br><br> 
+                <button type="submit">लग - इन</button>
+                <p>____________________ or ____________________</p><br><br>
+                <button type="button" id="facebook">Facebook बाट लगइन गर्नुहोस्</button><br><br>
+                <button type="button" id="google">Google बाट लगइन गर्नुहोस्</button>
+            </form>
+        </div>
+        <div class="photo"></div>
+        <img src="./ai/7-79419_illustration-people-vector-png-transparent-png-removebg-preview.png" alt="">
+    </div>
+     <!-- footer -->
+     <footer class="footer">
+        <!-- bottom left -->
+        <div class="bottom-left">
+           <h3>Download Our App</h3>
+           <p>Download Our App For Android Or IOs</p>
+           <a href="#"><img src="./footer photo/play-store.png" alt=""></a>
+           <a href="#"><img src="./footer photo/app-store.png" alt=""></a>
+        </div>
+        <!-- bottom middle  -->
+        <div class="bottom-middle">
+           <a href="./gym.html"><img src="./logo.png" alt=""></a><br><br><br>
+        </div>
+        <div class="bottom-right1">
+            <h2>Useful Link</h2>
+            
+               <a href="#"> Shop Now
+               </a> <br> 
+             <a href="#">Refund Policy</a> <br>
+             <a href="#">Insurance Policy</a><br>
+             <a href="#">Read Terms & Condition
+             </a>
+        </div>
+         <!-- bottom right -->
+        <div class="bottom-right">
+            <H2>Follow Us.</H2>
+            <a href="#">Facebook</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">Youtube</a><br>
+         <a href="#">Tiktok</a><br>
+            <img src="./footer photo/social media.png" alt="">  
+        </div>
+        <hr class="horizantal">
+        <div class="payment">
+            <h2>Payment</h2>
+            <ul>
+                <li>Master Card or Debit Card or Credit Card</li>
+                <li>E-sewa</li>
+                <li>Khelti</li>
+                <li>Bank Account</li>
+            </ul>
+        </div>
+        <hr id="hrB">
+        <div class="links">
+            <ul>
+                <li><a href="#">iPHONE</a></li>|
+                <li><a href="#">GALEXY</a></li>|
+                <li><a href="#">POCO</a></li>|
+                <li><a href="#">MI NOTE</a></li>|
+                <li><a href="#">Z-FOLD</a></li>|
+                <li><a href="#">GAMMING PAD</a></li>|
+                <li><a href="#">SMART WATCH</a></li>|
+                <li><a href="#">LAPTOP</a></li>|
+                <li><a href="#">HEADPHONE  </a></li>
+            </ul>
+        </div>
+         </footer>
+         <!-- Half footer below horizanrtal line -->
+         <style>
+             .horizantal{
+                 margin-top: 119px;
+                 background: black;
+                 border: 0.5px solid black;
+                 width: 100%;
+                }
+                .payment{
+                    text-align: center;
+                    margin-top: 5px;
+                }
+                .payment ul{
+                list-style: none;
+                }
+                .payment ul li{
+                    margin-top: 13px;
+                }
+                #hrB{
+                    margin-top: 19px;
+                    border: 0.1px solid black;
+                   
+                }
+                .links{
+                    text-align: center;
+                    margin-left: -10px;
+                    margin-top: 20px;
+                }
+                .links ul li{
+                    display: inline-block;
+                    margin: 10px;
+                }
+                .links a{
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.5s;
+                }
+                .links a:hover{
+                    color: rgb(161, 110, 211);
+                }
+         </style>
+</body>
+</html>

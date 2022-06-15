@@ -1,0 +1,644 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(176, 228, 228, 0.512);
+}
+
+/* For main nevigation bar */
+nav {
+  z-index: 1;
+  background-color: aliceblue;
+  position: sticky;
+  top: 0;
+}
+
+.nevbar {
+
+  height: 100px;
+}
+
+.nevbar img {
+  position: absolute;
+
+}
+
+.nevbar #menu {
+  margin-left: 13%;
+}
+
+.nevbar ul .menu {
+  display: inline-block;
+  margin-right: 21px;
+  margin-top: 68px;
+}
+
+/* using sudo selector to make under line effect while hovering */
+.nevbar ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 1.5s;
+}
+
+/* hovering effet on after sudo sedo selector */
+.nevbar ul li:hover::after {
+  width: 100%;
+}
+
+.nevbar ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 1.5s;
+  font-weight: 700;
+  padding: 5px;
+
+}
+
+.nevbar ul li a:hover {
+  color: brown;
+
+}
+
+.body-background video {
+  width: 100%;
+}
+
+/* footer */
+.footer {
+  background: #A2C4C9;
+  color: black;
+  height: 500px;
+  margin-top: 10%;
+  padding: 43px;
+}
+
+/* bottom left's css with  */
+.bottom-left {
+  border: 2px;
+  display: inline-block;
+  padding: 0px 10px;
+  border-radius: 14px;
+  padding-left: 20px;
+}
+
+/* playstore and app store image */
+.bottom-left img {
+  width: 100px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 21px;
+  padding-left: 40px;
+}
+
+.bottom-left h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.bottom-left p {
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* for upper middle */
+.bottom-middle {
+  border: 2px;
+  display: inline-block;
+  position: absolute;
+  width: 10%;
+  margin: auto 300px;
+  padding-right: 15px;
+}
+
+/* logo */
+.bottom-middle img {
+  height: 182px;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+/* CSS for right content */
+.bottom-right {
+  border: 2px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.bottom-right1 {
+  border: 2px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  padding-right: 300px;
+  text-align: center;
+}
+
+.bottom-right1 a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.bottom-right1 a:hover {
+  color: white;
+  transition: 1s;
+}
+
+.bottom-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.bottom-right a:hover {
+  transition: 1s;
+  color: white;
+}
+
+.bottom-right img {
+  width: 150px;
+}
+
+/* main content in the page */
+.catagory {
+  background-color: #7dd6e4;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -22px;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 15px rgb(118, 114, 114);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* inside apple class */
+.apple {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+}
+
+.apple img {
+  margin-left: -65px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.apple img:hover {
+  transform: scale(1.1);
+}
+
+.apple h3 {
+  margin-top: -6px;
+}
+
+/* inside realme class */
+.realem {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+
+}
+
+.realem img {
+  margin-left: -31px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.realem img:hover {
+  transform: scale(1.1);
+}
+
+.realem h3 {
+  margin-top: 3px;
+}
+
+/* inside samsung class */
+.samsung {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 10px;
+
+}
+
+.samsung img {
+  margin-left: -73px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.samsung img:hover {
+  transform: scale(1.1);
+}
+
+.samsung h3 {
+  margin-top: -6px;
+}
+
+/* inside samsung class */
+.oneplusA {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 10px;
+
+}
+
+.oneplusA img {
+  margin-left: -57px;
+  margin-top: -17px;
+  transition: all 0.7s;
+}
+
+.oneplusA img:hover {
+  transform: scale(1.1);
+}
+
+.oneplusA h3 {
+  margin-top: -29px;
+}
+
+
+/* inside mi class */
+.mi {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 10px;
+
+}
+
+.mi img {
+  margin-left: -38px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.mi img:hover {
+  transform: scale(1.1);
+}
+
+.mi h3 {
+  margin-top: -6px;
+}
+
+/* inside nokia class */
+.nokia {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 27px;
+
+}
+
+.nokia img {
+  margin-left: -97px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.nokia img:hover {
+  transform: scale(1.1);
+}
+
+.nokia h3 {
+  margin-top: -6px;
+  margin-left: -97px;
+}
+
+/* There are two division for the class new-Arrival and moRated  */
+/* These two class are inside one class called "ads" */
+.ads {
+  padding: 40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* class new arrival */
+.new-Arrival {
+  width: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.new-Arrival img {
+  transition: all 0.7s;
+  border-radius: 10px;
+}
+
+.new-Arrival img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  opacity: 60%;
+  border: 5px solid rgba(35, 107, 47, 0.723);
+}
+
+.new-Arrival h1 {
+  position: relative;
+  margin-top: -82px;
+  color: white;
+  opacity: 100%;
+}
+
+/* class moRated */
+.moRated {
+  width: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.moRated img {
+  transition: all 0.7s;
+  border-radius: 10px;
+}
+
+.moRated img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  opacity: 60%;
+  border: 5px solid rgba(35, 107, 47, 0.723);
+}
+
+.moRated h1 {
+  position: relative;
+  margin-top: -82px;
+  color: white;
+  opacity: 100%;
+}
+
+/* featured product */
+.featured {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -22px;
+  box-sizing: border-box;
+}
+
+.featured a {
+  text-decoration: none;
+  color: black;
+}
+
+.featured button {
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+/* inside apple13 class */
+.phone1 {
+  text-align: center;
+}
+
+.appleContent {
+  margin-top: -30px;
+}
+
+.apple13 h3 {
+  margin-top: 5px;
+}
+
+#colorA {
+  margin-top: 9px;
+}
+
+.apple13 {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  height: 93.6%;
+}
+
+.apple13 img {
+  margin-left: -120px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.apple13 img:hover {
+  transform: scale(1.1);
+}
+
+.apple13 h3 {
+  margin-top: 3px;
+}
+
+/* inside realme8 class */
+.phone2 {
+  text-align: center;
+}
+
+.phone2 h5 {
+  margin-top: -10px;
+}
+
+.realmeContent {
+  margin-top: -40px;
+}
+
+.realem8 {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+
+}
+
+.realem8 img {
+  margin-left: -31px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.realem8 img:hover {
+  transform: scale(1.1);
+}
+
+.realem8 h3 {
+  margin-top: 3px;
+}
+
+/* inside samsung22 class */
+.phone3 {
+  text-align: center;
+}
+
+.phone3 h5 {
+  margin-top: -10px;
+}
+
+.samsungContent {
+  margin-top: -40px;
+}
+
+.samsung22 {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 10px;
+
+}
+
+.samsung22 img {
+  margin-left: -50px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.samsung22 img:hover {
+  transform: scale(1.1);
+}
+
+.samsung22 h3 {
+  margin-top: -10px;
+}
+
+/* inside oneplus10 class */
+.phone4 {
+  text-align: center;
+}
+
+.plusContent {
+  margin-top: -40px;
+}
+
+.phone4 h5 {
+  margin-top: -10px;
+}
+
+.oneplus10 {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 10px;
+
+}
+
+.oneplus10 img {
+  margin-left: -121px;
+  margin-top: -17px;
+  transition: all 0.7s;
+}
+
+.oneplus10 img:hover {
+  transform: scale(1.1);
+}
+
+.oneplus10 h3 {
+  margin-top: 18px;
+}
+
+
+/* inside poco class */
+.phone5 {
+  text-align: center;
+}
+
+.pocoContent {
+  margin-top: -40px;
+}
+
+.phone5 h5 {
+  margin-top: -10px;
+}
+
+.poco {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 10px;
+
+}
+
+.poco img {
+  margin-left: -21px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.poco img:hover {
+  transform: scale(1.1);
+}
+
+.poco h3 {
+  margin-top: 0px;
+}
+
+/* inside nokia class */
+.phone6 {
+  text-align: center;
+}
+
+.nokiacontent {
+  margin-top: -40px;
+}
+
+.phone6 h5 {
+  margin-top: -10px;
+}
+
+.nokiac20 {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 11px;
+  height: 93.6%;
+  margin-left: 27px;
+
+}
+
+.nokiac20 img {
+  margin-left: -41px;
+  margin-top: 9px;
+  transition: all 0.7s;
+}
+
+.nokiac20 img:hover {
+  transform: scale(1.1);
+}
+
+.nokiac20 h3 {
+  margin-top: -6px;
+  margin-left: -28px;
+}
